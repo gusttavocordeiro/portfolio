@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    filter: brightness(60%);
+}
+
+.section-projects {
+    width: 100%;
+    height: 100%;
+    background-color: #0B0D28;
+
+}
+
+.content-projects {
+    padding: 80px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-projects {
+    font-family: "Roboto Mono", serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.span {
+    color: #6B43EF;
+    z-index: 2;
+}
+
+.p-projects {
+    color: #FFFFFFBF;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.cards {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 15rem;
+    column-gap: 30rem;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    column-gap: 18rem;
+    z-index: 2;
+}
+
+@keyframes float-up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card-01,
+.card-02,
+.card-03,
+.card-04 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 600px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        animation: float-up-down 3s ease-in-out infinite;
+    }
+
+    h3 {
+        font-family: "Roboto Mono", serif;
+        color: #ffffff;
+        font-size: 32px;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 17px;
+        color: #FFFFFFBF;
+        margin-bottom: 10px;
+    }
+}
+
+.cards_item {
+    z-index: 2;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-square-js {
+    font-size: 32px;
+    margin-right: 5px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+@media (max-width: 1500px) {
+    .h2-projects {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .p-projects {
+        font-size: 16px;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    #img-cards {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .card-01, .card-02, .card-03 {
+        margin-bottom: 14rem;
+    }
+
+}
