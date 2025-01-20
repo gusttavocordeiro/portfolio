@@ -503,7 +503,8 @@ ul li::before {
     }
 
     .step {
-        width: 230px;
+        width: 290px;
+        padding: 20px;
     }
 
     .step p {
@@ -583,6 +584,6 @@ ul li::before {
     }
 
     .faq-answer p {
-        width: 360px;
+        width: 330px;
     }
 }
